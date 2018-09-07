@@ -1,0 +1,22 @@
+{
+    "name": "magetun/module-importexport",
+    "description": "extensions from hundreds of the Import And Export Data extensions in the market as derived from MageTun Ranking which is using Magento developement Tunisia scores, rating reviews, search results, social metrics. ",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "email": "marouan.ben.mansour@gmail.com",
+            "name": "MageTun"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageTun\\ImportExport\\": ""
+        }
+    }
+}

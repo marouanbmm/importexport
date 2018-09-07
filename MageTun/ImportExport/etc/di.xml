@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Framework\Console\CommandList">
+		<arguments>
+			<argument name="commands" xsi:type="array">
+				<item name="Import" xsi:type="object">MageTun\ImportExport\Console\Command\Import</item>
+				<item name="Export" xsi:type="object">MageTun\ImportExport\Console\Command\Export</item>
+			</argument>
+		</arguments>
+	</type>
+    <type name="SlowLoading">
+        <arguments>
+            <argument name="slowLoading" xsi:type="object">MageTun\ImportExport\Model\SlowLoading\Proxy</argument>
+        </arguments>
+    </type>
+    <type name="FastLoading">
+        <arguments>
+            <argument name="slowLoading" xsi:type="object">MageTun\ImportExport\Model\SlowLoading\Proxy</argument>
+        </arguments>
+    </type>
+</config>

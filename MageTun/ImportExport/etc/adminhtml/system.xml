@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="magetun" sortOrder="999" translate="label">
+			<label>magetun</label>
+		</tab>
+		<section id="import" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>import</label>
+			<tab>magetun</tab>
+			<resource>MageTun_ImportExport::config_magetun_importexport</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>general</label>
+				<field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="csv_file_location" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>csv_file_location</label>
+					<comment/>
+				</field>
+				<field id="file" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>file</label>
+					<comment/>
+				</field>
+			</group>
+			<group id="map" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>map</label>
+				<field id="attribute" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
+					<label>attribute</label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
